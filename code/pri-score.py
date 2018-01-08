@@ -208,3 +208,331 @@
 #    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
+
+
+RESIDUE_ATOM = {
+ "ALA": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 18
+  },
+  "O": {
+   "Acceptor": 10,
+   "Donor": 0
+  }
+ },
+ "ARG": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 5
+  },
+  "NE": {
+   "Acceptor": 0,
+   "Donor": 28
+  },
+  "NH1": {
+   "Acceptor": 0,
+   "Donor": 63
+  },
+  "NH2": {
+   "Acceptor": 0,
+   "Donor": 84
+  },
+  "O": {
+   "Acceptor": 8,
+   "Donor": 0
+  }
+ },
+ "ASN": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 10
+  },
+  "ND2": {
+   "Acceptor": 0,
+   "Donor": 43
+  },
+  "O": {
+   "Acceptor": 6,
+   "Donor": 0
+  },
+  "OD1": {
+   "Acceptor": 13,
+   "Donor": 0
+  }
+ },
+ "ASP": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 4
+  },
+  "O": {
+   "Acceptor": 7,
+   "Donor": 0
+  },
+  "OD1": {
+   "Acceptor": 51,
+   "Donor": 0
+  },
+  "OD2": {
+   "Acceptor": 57,
+   "Donor": 0
+  }
+ },
+ "CYS": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 5
+  },
+  "O": {
+   "Acceptor": 3,
+   "Donor": 0
+  }
+ },
+ "GLN": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 4
+  },
+  "NE2": {
+   "Acceptor": 0,
+   "Donor": 23
+  },
+  "O": {
+   "Acceptor": 5,
+   "Donor": 0
+  },
+  "OE1": {
+   "Acceptor": 8,
+   "Donor": 0
+  }
+ },
+ "GLU": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 2
+  },
+  "O": {
+   "Acceptor": 1,
+   "Donor": 0
+  },
+  "OE1": {
+   "Acceptor": 27,
+   "Donor": 0
+  },
+  "OE2": {
+   "Acceptor": 30,
+   "Donor": 0
+  }
+ },
+ "GLY": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 53
+  },
+  "O": {
+   "Acceptor": 20,
+   "Donor": 0
+  }
+ },
+ "HIS": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 3
+  },
+  "ND1": {
+   "Acceptor": 0,
+   "Donor": 7
+  },
+  "NE2": {
+   "Acceptor": 2,
+   "Donor": 20
+  },
+  "O": {
+   "Acceptor": 6,
+   "Donor": 0
+  }
+ },
+ "ILE": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 8
+  },
+  "O": {
+   "Acceptor": 6,
+   "Donor": 0
+  }
+ },
+ "LEU": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 6
+  },
+  "O": {
+   "Acceptor": 6,
+   "Donor": 0
+  }
+ },
+ "LYS": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 17
+  },
+  "NZ": {
+   "Acceptor": 0,
+   "Donor": 67
+  },
+  "O": {
+   "Acceptor": 2,
+   "Donor": 0
+  }
+ },
+ "MET": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 7
+  },
+  "O": {
+   "Acceptor": 2,
+   "Donor": 0
+  }
+ },
+ "PHE": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 4
+  },
+  "O": {
+   "Acceptor": 4,
+   "Donor": 0
+  }
+ },
+ "PRO": {
+  "O": {
+   "Acceptor": 7,
+   "Donor": 0
+  }
+ },
+ "SER": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 33
+  },
+  "O": {
+   "Acceptor": 10,
+   "Donor": 0
+  },
+  "OG": {
+   "Acceptor": 8,
+   "Donor": 56
+  }
+ },
+ "THR": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 22
+  },
+  "O": {
+   "Acceptor": 3,
+   "Donor": 0
+  },
+  "OG1": {
+   "Acceptor": 7,
+   "Donor": 42
+  }
+ },
+ "TRP": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 6
+  },
+  "NE1": {
+   "Acceptor": 0,
+   "Donor": 10
+  },
+  "O": {
+   "Acceptor": 3,
+   "Donor": 0
+  }
+ },
+ "TYR": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 5
+  },
+  "O": {
+   "Acceptor": 5,
+   "Donor": 0
+  },
+  "OH": {
+   "Acceptor": 16,
+   "Donor": 37
+  }
+ },
+ "VAL": {
+  "N": {
+   "Acceptor": 0,
+   "Donor": 20
+  },
+  "O": {
+   "Acceptor": 12,
+   "Donor": 0
+  }
+ }
+}
+
+LIGAND = {
+ "Acceptor": 712,
+ "Atom": {
+  "F": {
+   "Acceptor": 2,
+   "Donor": 0,
+   "Metal": 0
+  },
+  "N.2": {
+   "Acceptor": 14,
+   "Donor": 2,
+   "Metal": 1
+  },
+  "N.3": {
+   "Acceptor": 0,
+   "Donor": 3,
+   "Metal": 0
+  },
+  "N.4": {
+   "Acceptor": 0,
+   "Donor": 64,
+   "Metal": 0
+  },
+  "N.am": {
+   "Acceptor": 4,
+   "Donor": 70,
+   "Metal": 0
+  },
+  "N.ar": {
+   "Acceptor": 41,
+   "Donor": 0,
+   "Metal": 1
+  },
+  "N.pl3": {
+   "Acceptor": 0,
+   "Donor": 81,
+   "Metal": 1
+  },
+  "O.2": {
+   "Acceptor": 221,
+   "Donor": 0,
+   "Metal": 11
+  },
+  "O.3": {
+   "Acceptor": 268,
+   "Donor": 125,
+   "Metal": 37
+  },
+  "O.co2": {
+   "Acceptor": 162,
+   "Donor": 0,
+   "Metal": 9
+   }
+  }
+ }
