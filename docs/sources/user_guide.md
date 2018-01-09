@@ -1,6 +1,6 @@
 ## User Guide
 
-The Protein Recognition Score software can be executed from the command line and takes an [Hbind](http://psa-lab.github.io/hbind) interaction table as input, which lists the hydrogen-bond interactions between a protein and its ligand.
+The Protein Recognition Score software can be executed from the command line and takes an [Hbind](http://psa-lab.github.io/Hbind) interaction table as input, which lists the hydrogen-bond interactions between a protein and its ligand.
 
 The following example illustrates how to compute the PRI score for the 1KPF [1KPF](https://www.rcsb.org/pdb/explore.do?structureId=1kpf) complex (PKCI-substrate analog) with its ligand `1KPF_AMP.mol2` (adenosine monophsophate). The structures are provided in the "[example_files/](./example_files)" subdirectory along with the generated Hbind interaction table.
 
