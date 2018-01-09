@@ -210,6 +210,9 @@
 #    limitations under the License.
 
 
+import sys
+
+
 RESIDUE_ATOM = {
  "ALA": {
   "N": {
@@ -536,3 +539,67 @@ LIGAND = {
    }
   }
  }
+
+
+PROT_MU = 298.139705882
+PROT_SIGMA = 213.78356884
+LIG_MU = 1323.53676471
+LIG_SIGMA = 1022.75276545
+
+
+def calc_pri(txt):
+
+    pri_lig, pri_prot = 0, 0
+
+    for line in txt.split('\n'):
+        if not line.startswith('| hbond'):
+            continue
+        lig_data, prot_data = line.split('--')
+        prot_data = prot_data.split()
+        prot_type = prot_data[-1]
+        lig_type = prot_data[-3]
+        prot_residue = prot_data[0]
+        prot_atomtype = prot_data[3]
+        lig_atomtype = lig_data.split()[4]
+
+        pri_prot += RESIDUE_ATOM[prot_residue][prot_atomtype][prot_type]
+        pri_lig += LIGAND['Atom'][lig_atomtype][lig_type]
+
+    pri = ((pri_lig - LIG_MU)/LIG_SIGMA) + ((pri_prot - PROT_MU)/PROT_SIGMA)
+
+    return pri_prot, pri_lig, pri
+
+
+if __name__ == '__main__':
+
+    s = """
+Protein Recognition Index, version 1.0.0
+
+Documentation: http://psa-lab.github.io/protein-recognition-index
+Raschka, Wolf, Bemister-Buffington, Kuhn (2018)
+Protein Structure and Analysis Lab, MSU (http://kuhnlab.bmb.msu.edu)
+    """
+    print(s)
+
+    usage = "\nUSAGE: python code/pri-score.py hbind_table.txt\n"
+
+    if len(sys.argv) < 2:
+        print("Argument Error: Missing Hbind table path on the command line")
+        print(usage)
+        sys.exit()
+
+    in_file = sys.argv[1]
+
+    try:
+        with open(in_file, 'r') as f:
+            txt = f.read()
+    except FileNotFoundError as e:
+        print(e)
+        print(usage)
+        sys.exit()
+
+    pri_prot, pri_lig, pri = calc_pri(txt)
+
+    print('Protein PRI: %d' % pri_prot)
+    print('Ligand PRI: %d' % pri_lig)
+    print('PRI: %.3f' % pri)
