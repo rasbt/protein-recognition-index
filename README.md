@@ -65,4 +65,4 @@ The PRI is then computed by standardizing the Protein and Ligand PRI scores and 
 
 ![](docs/sources/images/pri-eq.png)
 
-Here, &mu; (mean) and &sigma; (standard deviation) were derived from the 136 PRI-lig and PRI-prot scores computed from the 136 non-homologous complexes. Hence, the range of the PRI score is [-2, 2], where higher scores are better.
+Here, &mu; (mean) and &sigma; (standard deviation) were derived from the 136 PRI-lig and PRI-prot scores computed from the 136 non-homologous complexes.
