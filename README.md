@@ -6,10 +6,9 @@ The Protein Recognition Index (PRI) measures the similarity between H-bonding fe
 
 The PRI was developed, used, and described in detail in 
 
-- Sebastian Raschka, Wolf A., Bemister-Buffington J., and Kuhn L.A. (2018) 
-"Protein-ligand interfaces are polarized: Discovery of a strong trend for intermolecular hydrogen bonds to favor donors on the protein side with implications for predicting and designing ligand complexes." J. Computer-Aided Molec. Design [in revision]
+- Raschka, Sebastian, Alex Wolf, Joseph Bemister‐Buffington, and Leslie A. Kuhn (2018) “Protein-ligand interfaces are polarized: discovery of a strong trend for intermolecular hydrogen bonds to favor donors on the protein side with implications for predicting and designing ligand complexes” Journal of Computer-Aided Molecular Design. *Journal of Computer-Aided Molecular Design* (accepted manuscript) [[biorxiv preprint](https://www.biorxiv.org/content/early/2018/02/05/260612)]
 
-Documentation: [insert link]
+Documentation: https://psa-lab.github.io/protein-recognition-index
 
 
 <br>
@@ -58,8 +57,7 @@ PRI: 0.039
 
 The Protein PRI (PRI-prot) and Ligand PRI (PRI-lig) scores are computed based on the hydrogen bond statistics across 136 non-homologous protein-ligand complexes as described in
 
-- Sebastian Raschka, Wolf A., Bemister-Buffington J., and Kuhn L.A. (2018) 
-"Protein-ligand interfaces are polarized: Discovery of a strong trend for intermolecular hydrogen bonds to favor donors on the protein side with implications for predicting and designing ligand complexes." J. Computer-Aided Molec. Design [in revision]
+- Raschka, Sebastian, Alex Wolf, Joseph Bemister‐Buffington, and Leslie A. Kuhn (2018) “Protein-ligand interfaces are polarized: discovery of a strong trend for intermolecular hydrogen bonds to favor donors on the protein side with implications for predicting and designing ligand complexes” Journal of Computer-Aided Molecular Design. *Journal of Computer-Aided Molecular Design* (accepted manuscript) [[biorxiv preprint](https://www.biorxiv.org/content/early/2018/02/05/260612)]
 
 The PRI is then computed by standardizing the Protein and Ligand PRI scores and adding these, respectively:
 
